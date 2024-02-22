@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "target": "ESNext",
+    "jsx": "react-jsx",
+    "module": "NodeNext",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    // "outDir": "output",
+    "moduleResolution": "NodeNext",
+    "resolveJsonModule": true
+  },
+  "include": ["src"]
+}
