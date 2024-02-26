@@ -4,10 +4,11 @@
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": ".vite/build/main.js",
+  "type": "module",
   "scripts": {
     "start": "electron-forge start",
     "debug": "electron-forge start --vscode",
-    "package": "NODE_OPTIONS=\"--loader=ts-node/esm\" electron-forge package",
+    "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
     "lint": "eslint --ext .ts,.tsx ."
@@ -34,10 +35,12 @@
     "eslint": "^8.56.0",
     "eslint-plugin-import": "^2.29.1",
     "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "vite-plugin-require": "^1.1.14"
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "resedit": "^2.0.0"
   }
 }

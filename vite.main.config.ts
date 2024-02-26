@@ -5,6 +5,10 @@ import typescript from '@rollup/plugin-typescript';
 export default defineConfig({
   build: {
     sourcemap: true,
+    lib: {
+      entry: 'src/main.ts',
+      formats: ['es'],
+    },
     rollupOptions: {
       output: {
         dir: '.vite/build',
